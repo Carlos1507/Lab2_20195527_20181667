@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Home">
+
+    <View
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent">
+    </View>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Bienvenido Teleco"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/my_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/my_toolbar"
+        app:layout_constraintTop_toTopOf="@id/my_toolbar" />
+
+    <ImageView
+        android:id="@+id/lupita"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_search" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:rotation="180"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/my_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_right_alt_24" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        android:layout_marginTop="29dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:id="@+id/recomendados"
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="51dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Recomendados para ti"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/my_toolbar" />
+
+                <ImageView
+                    android:id="@+id/imageBienvenida"
+                    android:layout_width="291dp"
+                    android:layout_height="181dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/bienvenidatele"
+                    android:background="@drawable/rounded_shape"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recomendados" />
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="291dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@id/imageBienvenida"
+                    app:layout_constraintTop_toBottomOf="@id/imageBienvenida"
+                    app:layout_constraintStart_toStartOf="@id/imageBienvenida">
+                </View>
+                <TextView
+                    android:id="@+id/nombreBienvenida"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fiesta Cachimbos - Lima"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="29dp"
+                    app:layout_constraintEnd_toEndOf="@id/view5"
+                    app:layout_constraintTop_toTopOf="@id/view5"
+                    app:layout_constraintStart_toStartOf="@id/view5"/>
+                <TextView
+                    android:id="@+id/fechaHoraBienvenida"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:text="Miercoles 05 Abril. 9:00 pm"
+                    android:textColor="@color/color_black_green"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="19dp"
+                    app:layout_constraintTop_toBottomOf="@id/nombreBienvenida"
+                    app:layout_constraintStart_toStartOf="@id/view5"
+                    />
+                <TextView
+                    android:id="@+id/precioBienvenida"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:text="S/23"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginTop="19dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginStart="50dp"
+                    app:layout_constraintTop_toBottomOf="@id/nombreBienvenida"
+                    app:layout_constraintStart_toEndOf="@id/fechaHoraBienvenida"
+                 />
+
+
+
+
+                <TextView
+                    android:id="@+id/tendencias"
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Tendencias"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view5" />
+
+                <ImageView
+                    android:id="@+id/imageTendencias"
+                    android:layout_width="291dp"
+                    android:layout_height="181dp"
+                    android:layout_marginTop="21dp"
+                    android:src="@drawable/ferxxo"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tendencias" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="291dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@id/imageTendencias"
+                    app:layout_constraintTop_toBottomOf="@id/imageTendencias"
+                    app:layout_constraintStart_toStartOf="@id/imageTendencias">
+                </View>
+                <TextView
+                    android:id="@+id/nombreTendencia"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:text="FERXXO - Lima"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="29dp"
+                    app:layout_constraintEnd_toEndOf="@id/view6"
+                    app:layout_constraintTop_toTopOf="@id/view6"
+                    app:layout_constraintStart_toStartOf="@id/view6"/>
+                <TextView
+                    android:id="@+id/fechaHoraTendencia"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:text="Martes 30 Marzo. 9:00 pm"
+                    android:textColor="@color/color_black_green"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="19dp"
+                    app:layout_constraintTop_toBottomOf="@id/nombreTendencia"
+                    app:layout_constraintStart_toStartOf="@id/view6"
+                    />
+                <TextView
+                    android:id="@+id/precioTendencia"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:text="S/494"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginTop="19dp"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginStart="50dp"
+                    app:layout_constraintTop_toBottomOf="@id/nombreTendencia"
+                    app:layout_constraintStart_toEndOf="@id/fechaHoraTendencia"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
