@@ -60,33 +60,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/my_toolbar"
-        android:layout_marginTop="29dp"
-        >
-
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="29dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scroll"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/recomendados"
                     android:layout_width="328dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="51dp"
                     android:layout_marginEnd="16dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Recomendados para ti"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/my_toolbar" />
+                    app:layout_constraintTop_toTopOf="@id/scroll" />
 
                 <ImageView
                     android:id="@+id/imageBienvenida"
@@ -145,8 +142,6 @@
                  />
 
 
-
-
                 <TextView
                     android:id="@+id/tendencias"
                     android:layout_width="328dp"
@@ -159,7 +154,7 @@
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/view5" />
+                    app:layout_constraintTop_toTopOf="@id/precioBienvenida" />
 
                 <ImageView
                     android:id="@+id/imageTendencias"
@@ -178,10 +173,11 @@
                     android:layout_width="291dp"
                     android:layout_height="70dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginBottom="80dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@id/imageTendencias"
-                    app:layout_constraintTop_toBottomOf="@id/imageTendencias"
-                    app:layout_constraintStart_toStartOf="@id/imageTendencias">
-                </View>
+                    app:layout_constraintStart_toStartOf="@id/imageTendencias"
+                    app:layout_constraintTop_toBottomOf="@id/imageTendencias"></View>
                 <TextView
                     android:id="@+id/nombreTendencia"
                     android:layout_width="262dp"
