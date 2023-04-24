@@ -96,6 +96,7 @@
                     android:src="@drawable/bienvenidatele"
                     android:background="@drawable/rounded_shape"
                     android:scaleType="centerCrop"
+                    android:clickable="true"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/recomendados" />
@@ -166,6 +167,7 @@
                     android:layout_height="181dp"
                     android:layout_marginTop="21dp"
                     android:src="@drawable/ferxxo"
+                    android:clickable="true"
                     android:scaleType="centerCrop"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Lab2IOT_LoginAndRegister</string>
     <string name="leido_terminos">¿Usted ha leído y acepta los términos y condiciones para el tratamiento de sus datos personales contenidos en la <b>Política de Privacidad Web?</b></string>
     <string name="terminos">He leído y aceptado los <b>Términos y condiciones.</b></string>
     <string name="registrese">Registrese aquí</string>
     <string name="iniciosesion">Iniciar sesión</string>
     <string name="notienecuenta">¿No tiene cuenta? Registrate aqui</string>
+    <string name="app_name">Lab2</string>
 </resources>

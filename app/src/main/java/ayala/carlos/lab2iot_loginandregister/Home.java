@@ -43,6 +43,24 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView bienvenida = findViewById(R.id.imageBienvenida);
+        bienvenida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView ferxxo = findViewById(R.id.imageTendencias);
+        ferxxo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, MainActivity3.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
